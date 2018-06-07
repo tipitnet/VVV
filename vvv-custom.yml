@@ -1,0 +1,34 @@
+sites:
+  kutx-dev:
+    repo: https://github.com/tipitnet/custom-site-template.git
+    vm_dir: /srv/www/kutx-dev
+    custom:
+      repo_key: id_repokey
+      repo_domain: tipit.git.beanstalkapp.com
+      production_domain: kutx.org
+      repo_content: git@tipit.git.beanstalkapp.com:/tipit/kutkutx.git
+      db_name: wp_kutx
+      media_folders:
+        "/srv/config/media-config/kutx/dopts": "wp-content/plugins/dopts/uploads"
+        "/srv/config/media-config/kutx/content": "wp-content/uploads"
+      replace_strings:
+        "www.kutx.org": "kutx-dev.test"
+        "kutx.org": "kutx-dev.test"
+
+  thinkbilingual-dev:
+    repo: https://github.com/tipitnet/custom-site-template.git
+    vm_dir: /srv/www/thinkbilingual-dev
+    custom:
+      repo_key: id_repokey
+      repo_domain: tipit.git.beanstalkapp.com
+      production_domain: austin.thinkbilingual.org
+      repo_content: git@tipit.git.beanstalkapp.com:/tipit/think-bilingual.git
+      db_name: wp_thinkbilingual
+      media_folders:
+      replace_strings:
+        "www.austin.thinkbilingual.org": "thinkbilingual-dev.test"
+        "austin.thinkbilingual.org": "thinkbilingual-dev.test"
+
+utilities:
+  core:
+    - trusted-hosts
