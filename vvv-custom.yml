@@ -9,8 +9,6 @@ sites:
       repo_content: git@tipit.git.beanstalkapp.com:/tipit/kutkutx.git
       db_name: wp_kutx
       media_folders:
-        "/srv/config/media-config/kutx/dopts": "wp-content/plugins/dopts/uploads"
-        "/srv/config/media-config/kutx/content": "wp-content/uploads"
       replace_strings:
         "www.kutx.org": "kutx-dev.test"
         "kutx.org": "kutx-dev.test"
